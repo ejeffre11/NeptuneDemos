@@ -1,0 +1,76 @@
+{
+	"id": "ab64832d-1900-4501-95a1-d6c59c946a71",
+	"createdAt": "2025-11-12T21:03:31.000Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "769d58ce-298b-4ca1-b7b2-750f2fff6ceb",
+			"method": "POST",
+			"path": "/test/(name)/(age)",
+			"description": "",
+			"parameters": [
+				{
+					"name": "name",
+					"description": "",
+					"required": false,
+					"inPath": true,
+					"value": "",
+					"default": "erik",
+					"example": ""
+				},
+				{
+					"name": "age",
+					"description": "",
+					"required": false,
+					"inPath": true,
+					"value": "",
+					"default": "24",
+					"example": ""
+				},
+				{
+					"name": "location",
+					"description": "",
+					"required": false,
+					"inPath": false,
+					"value": "",
+					"default": "Howard",
+					"example": ""
+				}
+			],
+			"headers": [],
+			"responses": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "709f39b9-4c9f-40d2-959b-574d3f2a96a7"
+		}
+	],
+	"definitions": [],
+	"documentation": [],
+	"name": "test",
+	"endpoint": "/api/serverscript/test",
+	"ver": "25.11.13.0819",
+	"version": null,
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "4c0f0414-8568-4422-940a-3221f0219189",
+	"apiGroup": null,
+	"apiFormat": 1,
+	"roles": []
+}

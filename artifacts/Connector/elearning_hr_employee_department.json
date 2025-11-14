@@ -1,0 +1,17 @@
+{
+	"id": "1840aae0-463c-48d7-95b4-df7f1c8ec352",
+	"createdAt": "2025-11-10T19:10:40.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"tableid": "d91ad9bb-4d02-4c2a-9e35-7aab9efefe33",
+		"hasDocumentation": false
+	},
+	"documentation": {},
+	"name": "elearning_hr_employee_department",
+	"description": null,
+	"group": null,
+	"type": "T",
+	"ver": "25.11.10.1410",
+	"disabled": false,
+	"package": "4c0f0414-8568-4422-940a-3221f0219189"
+}

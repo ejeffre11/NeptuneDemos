@@ -1,0 +1,81 @@
+{
+	"id": "73a65612-2022-4a3d-b3d3-eb1bd3be38dc",
+	"createdAt": "2025-11-10T20:28:09.000Z",
+	"createdBy": "admin",
+	"interface": [
+		{
+			"id": "fde7afc4-65fb-467d-d924-c2212a60da3a",
+			"parent": "",
+			"name": "department",
+			"objectType": "string",
+			"description": ""
+		}
+	],
+	"rules": [
+		{
+			"id": "6d192e58-cbbc-44c7-f16d-18fef4f8f0ff",
+			"result": "IT",
+			"items": [
+				{
+					"id": "6ab2af0f-db0c-4deb-8730-1bfd11b3e0f6",
+					"field": "fde7afc4-65fb-467d-d924-c2212a60da3a",
+					"operator": "equal",
+					"value": "100"
+				}
+			]
+		},
+		{
+			"id": "dd19c683-eae4-4824-c0ea-eb1b462fe6e0",
+			"result": "HR",
+			"items": [
+				{
+					"id": "f1a397e2-7300-439e-8760-6333a12a1b1f",
+					"field": "fde7afc4-65fb-467d-d924-c2212a60da3a",
+					"operator": "equal",
+					"value": "200"
+				}
+			]
+		},
+		{
+			"id": "962efe03-ac92-4dc0-cb8e-b26b304be3d5",
+			"result": "FINANCE",
+			"items": [
+				{
+					"id": "698ca60c-0e24-4146-e495-5414bb7a27e1",
+					"field": "fde7afc4-65fb-467d-d924-c2212a60da3a",
+					"operator": "equal",
+					"value": "300"
+				}
+			]
+		},
+		{
+			"id": "bb7002a5-6781-4d41-aa11-5f110ce19006",
+			"result": "MFG",
+			"items": [
+				{
+					"id": "67fdd947-0791-4186-b9d8-cc731e2d4751",
+					"field": "fde7afc4-65fb-467d-d924-c2212a60da3a",
+					"operator": "equal",
+					"value": "400"
+				}
+			]
+		},
+		{
+			"id": "7f25a6c4-c3b9-40a1-8262-cbe9ee9730da",
+			"result": "UNASSIGNED",
+			"items": [
+				{
+					"id": "08980dae-af98-4d79-bfca-3155d86a27cc",
+					"field": "fde7afc4-65fb-467d-d924-c2212a60da3a",
+					"operator": "equal",
+					"value": ""
+				}
+			]
+		}
+	],
+	"name": "departments_rule",
+	"description": "departments_rule",
+	"ver": "25.11.10.1555",
+	"package": "4c0f0414-8568-4422-940a-3221f0219189",
+	"roles": []
+}

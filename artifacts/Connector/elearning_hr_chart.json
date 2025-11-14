@@ -1,0 +1,17 @@
+{
+	"id": "5465955e-02a4-4c42-a372-f6ea6838b309",
+	"createdAt": "2025-11-10T19:00:09.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"tableid": "abbd1f91-ddad-ed11-a8e0-000d3ada944e",
+		"hasDocumentation": false
+	},
+	"documentation": {},
+	"name": "elearning_hr_chart",
+	"description": null,
+	"group": null,
+	"type": "T",
+	"ver": "25.11.14.0755",
+	"disabled": false,
+	"package": "4c0f0414-8568-4422-940a-3221f0219189"
+}

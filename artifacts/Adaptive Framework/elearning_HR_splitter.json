@@ -1,0 +1,232 @@
+{
+	"id": "fbbad11e-6fa7-4392-b81f-e301c997cf4e",
+	"createdAt": "2025-11-10T19:32:25.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"properties": {
+			"report": {
+				"splitter1Resizable": false,
+				"splitter2Resizable": true,
+				"splitter3Resizable": true,
+				"app1Resizable": false,
+				"app2Resizable": false,
+				"app3Resizable": true,
+				"app4Resizable": true,
+				"app5Resizable": true,
+				"app6Resizable": true,
+				"app7Resizable": true,
+				"app8Resizable": true,
+				"app9Resizable": true,
+				"_app1Nav": {
+					"destinationType": "F",
+					"openAs": "P",
+					"butType": "Accept",
+					"fieldType": "NavigationChild",
+					"displayResponse": false,
+					"dialogHeader": true,
+					"destinationTargetF": "4990cbd8-855f-4b2b-860d-83d6435899cc",
+					"keyField": []
+				},
+				"_app2Nav": {
+					"destinationType": "F",
+					"openAs": "P",
+					"butType": "Accept",
+					"fieldType": "NavigationChild",
+					"displayResponse": false,
+					"dialogHeader": true,
+					"destinationTargetF": "b643bcec-f3b6-485c-a5e0-d3ab9114aa8c",
+					"keyField": []
+				},
+				"splitter1Width": "450px"
+			},
+			"form": {},
+			"table": {}
+		},
+		"fieldCatalog": [
+			{
+				"name": "firstName",
+				"label": "First Name",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "lastName",
+				"label": "Last Name",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "emailAddress",
+				"label": "Email Address",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "phoneNumber",
+				"label": "Phone Number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "streetAddress",
+				"label": "Street Address",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "nationality",
+				"label": "Nationality",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "salary",
+				"label": "Salary",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "city",
+				"label": "City",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "postCode",
+				"label": "Post Code",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "department",
+				"label": "Department",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "role",
+				"label": "Role",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "hireDate",
+				"label": "Hire Date",
+				"type": "timestamp",
+				"usage": "BOTH"
+			},
+			{
+				"name": "employmentType",
+				"label": "Employment Type",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "employeeReferenceNo",
+				"label": "Reference Number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "employmentTime",
+				"label": "Employment Time",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "updatedAt",
+				"label": "Updated At",
+				"type": "timestamp",
+				"usage": "BOTH"
+			},
+			{
+				"name": "createdAt",
+				"label": "Created At",
+				"type": "timestamp",
+				"usage": "BOTH"
+			},
+			{
+				"name": "updatedBy",
+				"label": "Updated By",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "createdBy",
+				"label": "Created By",
+				"type": "text",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [],
+		"fieldsRun": [],
+		"defaultVariant": {
+			"id": "25bc57ae-4015-4acd-819f-e1ffe3f20aea",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		},
+		"translation": {
+			"EN": {
+				"report": {},
+				"form": {},
+				"table": {},
+				"fieldCatalog": {}
+			},
+			"NO": {
+				"report": {},
+				"form": {},
+				"table": {},
+				"fieldCatalog": {}
+			},
+			"DE": {
+				"report": {},
+				"form": {},
+				"table": {},
+				"fieldCatalog": {
+					"firstName": "Vorname",
+					"lastName": "Nachname",
+					"emailAddress": "E-Mail-Adresse",
+					"phoneNumber": "Telefonnummer",
+					"streetAddress": "Straßenadresse",
+					"nationality": "Nationalität",
+					"salary": "Gehalt",
+					"city": "Stadt",
+					"postCode": "Postleitzahl",
+					"department": "Abteilung",
+					"role": "Rolle",
+					"hireDate": "Einstellungsdatum",
+					"employmentType": "Beschäftigungsart",
+					"employeeReferenceNo": "Mitarbeiterreferenznummer",
+					"employmentTime": "Beschäftigungszeit",
+					"updatedAt": "Aktualisiert am",
+					"createdAt": "Erstellt am",
+					"updatedBy": "Aktualisiert von",
+					"createdBy": "Erstellt von"
+				}
+			}
+		},
+		"table": "elearning_hr_demo_employees"
+	},
+	"name": "elearning_HR_splitter",
+	"description": "elearning_HR_splitter",
+	"group": "",
+	"type": "C",
+	"connectorid": "a68392a6-b4fc-4eeb-95fa-e988777f9d08",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "25.11.10.1457",
+	"disabled": false,
+	"appType": "A",
+	"application": "neptunedxp_adaptive_splitter",
+	"package": "4c0f0414-8568-4422-940a-3221f0219189",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}

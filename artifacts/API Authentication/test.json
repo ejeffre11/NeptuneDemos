@@ -1,0 +1,25 @@
+{
+	"id": "2dda4cfd-e4df-4a0b-aeef-a031f15b4454",
+	"createdAt": "2025-11-13T14:02:11.000Z",
+	"createdBy": "admin",
+	"headers": [],
+	"details": {
+		"subject": {},
+		"headers": [],
+		"password": "",
+		"secret": ""
+	},
+	"azureRelayDetails": {
+		"ns": "",
+		"hcName": "",
+		"apName": "",
+		"apKey": ""
+	},
+	"name": "test",
+	"description": null,
+	"type": null,
+	"useCloudConnector": false,
+	"cloudConnectorType": null,
+	"ver": "25.11.13.0902",
+	"package": "4c0f0414-8568-4422-940a-3221f0219189"
+}

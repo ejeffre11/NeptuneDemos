@@ -1,0 +1,521 @@
+{
+	"id": "2ce943d1-a99a-488b-b06a-ff501bb91a5d",
+	"createdAt": "2025-11-11T15:26:56.000Z",
+	"createdBy": "admin",
+	"objects": [
+		{
+			"fieldNo": "23ce21d9-73b7-4b7a-fbfa-8460c72bb7f8",
+			"fieldName": "App",
+			"fieldParent": 0,
+			"fieldType": "sap.m.App",
+			"script": "",
+			"customComponent": false,
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "662cad8b-a646-42e3-9e76-c4df01802667",
+					"fieldName": "PageStart",
+					"fieldParent": "23ce21d9-73b7-4b7a-fbfa-8460c72bb7f8",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "Signature Pad Building Block",
+							"script": "",
+							"translation": [
+								{
+									"language": "DE",
+									"value": "Aufgabenlisten-Kartenansicht"
+								}
+							]
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "a1dc2dd7-ae3d-496b-ad37-e91b118c4bcf",
+							"fieldName": "BarContent",
+							"fieldParent": "662cad8b-a646-42e3-9e76-c4df01802667",
+							"fieldType": "sap.m.Bar",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "position",
+									"grouping": "Parent",
+									"value": "addContent",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "45698a56-6fbd-4dd5-89d3-06d5d1d9e8f7",
+									"fieldName": "Left",
+									"fieldParent": "a1dc2dd7-ae3d-496b-ad37-e91b118c4bcf",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentLeft",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "4f987c8e-7281-4fbb-8df1-5f97afdcf28f",
+											"fieldName": "Start",
+											"fieldParent": "45698a56-6fbd-4dd5-89d3-06d5d1d9e8f7",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Emphasized",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Start",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://fa-solid/play",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.Button/Start/press.script",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "c0641f6f-8f4c-4958-dc10-20ed9194f425",
+									"fieldName": "Right",
+									"fieldParent": "a1dc2dd7-ae3d-496b-ad37-e91b118c4bcf",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentRight",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "119046b5-1d25-47d2-b8b1-cfaf1afd2d53",
+											"fieldName": "TaketoIMG",
+											"fieldParent": "c0641f6f-8f4c-4958-dc10-20ed9194f425",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "visible",
+													"grouping": "Properties",
+													"value": "false",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Accept",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Transform in Image",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://accept",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.Button/TaketoIMG/press.script",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "4737a0c4-bd3e-4462-e8a4-df87231f508a",
+											"fieldName": "Reset",
+											"fieldParent": "c0641f6f-8f4c-4958-dc10-20ed9194f425",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "visible",
+													"grouping": "Properties",
+													"value": "false",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Reset",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://reset",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "signaturePad.clear();",
+													"script": "signaturePad.clear();",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "221874eb-e6c7-491f-8eea-95a365622aff",
+							"fieldName": "IconTabBar",
+							"fieldParent": "662cad8b-a646-42e3-9e76-c4df01802667",
+							"fieldType": "sap.m.IconTabBar",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "visible",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "expandable",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "tabDensityMode",
+									"grouping": "Properties",
+									"value": "Compact",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "2f316884-f26c-4df5-a609-bf97b94c0762",
+									"fieldName": "tabSignIt",
+									"fieldParent": "221874eb-e6c7-491f-8eea-95a365622aff",
+									"fieldType": "sap.m.IconTabFilter",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Do Your signature Here",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "key",
+											"grouping": "Properties",
+											"value": "tabSign",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://signature",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "design",
+											"grouping": "Properties",
+											"value": "Horizontal",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "42898f8d-c4c1-4dde-e8e5-674a7320d8da",
+											"fieldName": "HTMLObject",
+											"fieldParent": "2f316884-f26c-4df5-a609-bf97b94c0762",
+											"fieldType": "sap.ui.core.HTML",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "c2882530-f884-47ff-e4f1-72031cf9948b",
+													"fieldName": "oHTML",
+													"fieldParent": "42898f8d-c4c1-4dde-e8e5-674a7320d8da",
+													"fieldType": "neptune.Html",
+													"script": "<canvas id='signature-pad' class='signature-pad'></canvas>",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "b30e91d0-4ce0-4fed-e612-b4bb10be2c04",
+									"fieldName": "tabSign",
+									"fieldParent": "221874eb-e6c7-491f-8eea-95a365622aff",
+									"fieldType": "sap.m.IconTabFilter",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Your signature Image",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "key",
+											"grouping": "Properties",
+											"value": "tabSign",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://picture",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "design",
+											"grouping": "Properties",
+											"value": "Horizontal",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "d9e3a794-c87c-4c88-87cb-0f28546f7553",
+											"fieldName": "imgSign",
+											"fieldParent": "b30e91d0-4ce0-4fed-e612-b4bb10be2c04",
+											"fieldType": "sap.m.Image",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "width",
+													"grouping": "Properties",
+													"value": "100%",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "efeefc24-72dc-4930-e9ba-0b16ee3ffe2b",
+					"fieldName": "PageHidden",
+					"fieldParent": "23ce21d9-73b7-4b7a-fbfa-8460c72bb7f8",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "8b994ca8-51f6-49fe-8b08-53d95e0d727a",
+							"fieldName": "datadef",
+							"fieldParent": "efeefc24-72dc-4930-e9ba-0b16ee3ffe2b",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/datadef.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "40216ce9-fad1-4186-c999-c1a4b639ff33",
+					"fieldName": "signature_pad_copy.min.js",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": "file://script/neptune.Script/signature_pad_copy.min.js.js",
+					"customComponent": false,
+					"filePath": "signature_pad.min.js",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": [
+				{
+					"fieldNo": "a9c8156d-615e-4394-8771-cc87f4eecb7b",
+					"fieldName": "ReadMe1",
+					"fieldParent": 99998,
+					"fieldType": "neptune.Text",
+					"script": "file://script/neptune.Text/ReadMe1.txt",
+					"customComponent": false,
+					"filePath": "readme1",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "90a4083b-566d-4360-a14b-757d89068464",
+					"fieldName": "ReadMe",
+					"fieldParent": 99998,
+					"fieldType": "neptune.Script",
+					"script": "file://script/neptune.Script/ReadMe.js",
+					"customComponent": false,
+					"filePath": "readme",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		}
+	],
+	"componentInterface": [],
+	"ver": "25.11.11.1052",
+	"application": "barcode_scanning",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_horizon",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "",
+	"compiledCss": null,
+	"header": "file:///header.html",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
+	"generateVersionOnActivation": false,
+	"activationHistoryCount": 0,
+	"package": "4c0f0414-8568-4422-940a-3221f0219189",
+	"apis": []
+}

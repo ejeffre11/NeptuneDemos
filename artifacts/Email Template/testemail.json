@@ -1,0 +1,12 @@
+{
+	"id": "667bc53d-ca7b-4f64-973f-636b75b269d7",
+	"createdAt": "2025-11-12T19:21:48.000Z",
+	"createdBy": "admin",
+	"translation": null,
+	"name": "testemail",
+	"description": "Test email",
+	"content": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\"><link href=\"https://gtmdemosystem.neptune-software.cloud/public/editor/suneditor.min.css\" rel=\"stylesheet\"></head><body class=\"sun-editor-editable\" style=\"\" ><p>blah blah blah</p></body></html>",
+	"ver": "25.11.12.1422",
+	"type": "template",
+	"package": "4c0f0414-8568-4422-940a-3221f0219189"
+}

@@ -1,0 +1,42 @@
+{
+	"id": "817edd05-4539-42fc-ac9f-457806b03930",
+	"createdAt": "2025-11-11T18:14:50.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "a7093239-1476-43d0-e110-2916947f5c7c",
+			"fieldName": "Product",
+			"fieldType": "text",
+			"isUnique": false
+		},
+		{
+			"id": "c576c255-00ec-44bd-ec89-eadf04bf39a7",
+			"fieldName": "Desc",
+			"fieldType": "text",
+			"isUnique": false
+		},
+		{
+			"id": "bf3f45c0-d78d-4849-dd3b-77210f5910c1",
+			"fieldName": "Version",
+			"fieldType": "json",
+			"isUnique": false
+		},
+		{
+			"id": "d5eda1dd-8845-4d5a-9817-54a9c26a0610",
+			"fieldName": "Quantity",
+			"fieldType": "integer",
+			"isUnique": false
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "products",
+	"description": null,
+	"ver": "25.11.11.1322",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "4c0f0414-8568-4422-940a-3221f0219189",
+	"generationStrategy": "uuid",
+	"rolesRead": [],
+	"rolesWrite": []
+}

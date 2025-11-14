@@ -1,0 +1,140 @@
+{
+	"id": "1b5c14c6-a6be-4865-8ed3-0985a320b4b8",
+	"createdAt": "2025-11-12T19:11:15.000Z",
+	"createdBy": "admin",
+	"objects": [
+		{
+			"fieldNo": "2471814e-6b59-4541-a971-d0ad08dc6158",
+			"fieldName": "App",
+			"fieldParent": 0,
+			"fieldType": "sap.m.App",
+			"script": "",
+			"customComponent": false,
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "416f4bd4-f603-46cb-bf7f-93c265c54470",
+					"fieldName": "Page",
+					"fieldParent": "2471814e-6b59-4541-a971-d0ad08dc6158",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "912b6ecd-9d7a-4384-e12f-7b5c0e218643",
+							"fieldName": "Button",
+							"fieldParent": "416f4bd4-f603-46cb-bf7f-93c265c54470",
+							"fieldType": "sap.m.Button",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "press",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/sap.m.Button/Button/press.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "fab4de89-5ce6-4526-979f-def1a5b31a34",
+					"fieldName": "Javascript",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": "file://script/neptune.Script/Javascript.js",
+					"customComponent": false,
+					"filePath": "javascript",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "28a9f46f-692f-4758-9814-62e2984656bb",
+					"fieldName": "RestAPI",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"customComponent": false,
+					"restSource": "94c76493-00fc-ed11-907c-000d3a654fb6",
+					"restOperation": "50ea5405-a856-48f9-b999-ec45fd7d5278",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"ver": "25.11.12.1424",
+	"application": "elearning_email",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_horizon",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "",
+	"compiledCss": null,
+	"header": "",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
+	"generateVersionOnActivation": false,
+	"activationHistoryCount": 0,
+	"package": "4c0f0414-8568-4422-940a-3221f0219189",
+	"apis": [
+		{
+			"id": "94c76493-00fc-ed11-907c-000d3a654fb6",
+			"name": "SendEmailGeneric",
+			"ver": "23.6.9.1317"
+		}
+	]
+}

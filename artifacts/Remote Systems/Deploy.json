@@ -1,0 +1,23 @@
+{
+	"id": "facb0cb7-9e48-4266-9dd6-f2c76d88e45d",
+	"createdAt": "2025-11-13T19:51:50.000Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"url": "http://dev",
+	"name": "Deploy",
+	"ver": "25.11.13.1451",
+	"description": null,
+	"role": null,
+	"username": null,
+	"password": "",
+	"type": "",
+	"sapClient": null,
+	"useClientDeploy": false,
+	"token": "",
+	"monitoringName": null,
+	"monitoringEnabled": false,
+	"tlsAllowUntrusted": false,
+	"preRequestHookId": null,
+	"package": "4c0f0414-8568-4422-940a-3221f0219189"
+}

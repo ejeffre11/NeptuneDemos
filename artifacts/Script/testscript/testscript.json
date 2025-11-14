@@ -1,0 +1,34 @@
+{
+	"id": "2ca5ff50-ba61-4252-81dc-8bb64b74c90c",
+	"createdAt": "2025-11-12T17:03:49.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "3299afd2-0816-ec11-ae72-0050f255283a",
+			"name": "equipment",
+			"contextname": "equipment"
+		}
+	],
+	"apis": [
+		{
+			"id": "d652ba44-a308-4c0a-fdc2-18c70a59bca8",
+			"parent": "14a2137e-9e64-4383-9848-8e468f3834d6",
+			"name": "/equipment",
+			"contextname": "equipment",
+			"method": "GET"
+		}
+	],
+	"name": "testscript",
+	"ver": "25.11.12.1323",
+	"description": null,
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "05f836ff-033e-47c6-8e9b-4b430031fa63",
+	"package": "4c0f0414-8568-4422-940a-3221f0219189"
+}

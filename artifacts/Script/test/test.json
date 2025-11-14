@@ -1,0 +1,20 @@
+{
+	"id": "709f39b9-4c9f-40d2-959b-574d3f2a96a7",
+	"createdAt": "2025-11-12T20:33:24.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "test",
+	"ver": "25.11.13.0825",
+	"description": null,
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "05940e53-9a25-49c3-8461-2acbd7dabdb7",
+	"package": "4c0f0414-8568-4422-940a-3221f0219189"
+}

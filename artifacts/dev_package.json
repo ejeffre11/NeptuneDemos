@@ -1,0 +1,238 @@
+{
+	"id": "4c0f0414-8568-4422-940a-3221f0219189",
+	"createdAt": "2025-11-10T18:57:52.000Z",
+	"createdBy": "admin",
+	"git": {
+		"remote": "https://github.com/ejeffre11/NeptuneDemos",
+		"branch": "main"
+	},
+	"name": "elearnign_ej",
+	"description": null,
+	"ver": "25.11.13.1636",
+	"enableCICD": true,
+	"internalReadOnly": false,
+	"oeVersion": null,
+	"excludeTemplateFiles": false,
+	"roles": [],
+	"apps": [
+		{
+			"id": "bb448ae3-0327-444f-9755-7217be2fbe42",
+			"application": "productsdropdowntable",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "351f48e2-5410-43d6-ab1c-f259956fd0ac",
+			"application": "junk",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "2ce943d1-a99a-488b-b06a-ff501bb91a5d",
+			"application": "barcode_scanning",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "21e0e35c-f771-4e57-9782-cdd90922dc61",
+			"application": "map_leaflet",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "1b5c14c6-a6be-4865-8ed3-0985a320b4b8",
+			"application": "elearning_email",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [
+		{
+			"id": "d42df693-5932-4b50-b0ba-089362fc91cd",
+			"name": "products",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "ab64832d-1900-4501-95a1-d6c59c946a71",
+			"name": "test",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "817edd05-4539-42fc-ac9f-457806b03930",
+			"name": "products",
+			"description": null
+		}
+	],
+	"jsclass": [
+		{
+			"id": "709f39b9-4c9f-40d2-959b-574d3f2a96a7",
+			"name": "test",
+			"description": null
+		},
+		{
+			"id": "2ca5ff50-ba61-4252-81dc-8bb64b74c90c",
+			"name": "testscript",
+			"description": null
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "05f836ff-033e-47c6-8e9b-4b430031fa63",
+			"name": "elearning_server_script",
+			"description": ""
+		},
+		{
+			"id": "05940e53-9a25-49c3-8461-2acbd7dabdb7",
+			"name": "apitestscript",
+			"description": ""
+		}
+	],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [
+		{
+			"id": "73a65612-2022-4a3d-b3d3-eb1bd3be38dc",
+			"name": "departments_rule",
+			"description": "departments_rule"
+		}
+	],
+	"reports": [
+		{
+			"id": "fbbad11e-6fa7-4392-b81f-e301c997cf4e",
+			"name": "elearning_HR_splitter",
+			"description": "elearning_HR_splitter",
+			"application": "neptunedxp_adaptive_splitter"
+		},
+		{
+			"id": "de9637d3-195a-4a8f-91af-73edb9fe04bd",
+			"name": "elearning_hr_employee_edit",
+			"description": "elearning_hr_employee_edit",
+			"application": "neptunedxp_adaptive_edit"
+		},
+		{
+			"id": "b9b74747-1ed2-4fcc-b16f-3c7f9aa0229b",
+			"name": "elearning_hr_employee_list",
+			"description": "elearning_hr_employee_list",
+			"application": "neptunedxp_adaptive_list"
+		},
+		{
+			"id": "b643bcec-f3b6-485c-a5e0-d3ab9114aa8c",
+			"name": "elearning_hr_employee_piechart",
+			"description": "elearning_hr_employee_piechart",
+			"application": "neptunedxp_adaptive_tile_chart"
+		},
+		{
+			"id": "99e1a162-6b01-4358-a9da-c848ce480dae",
+			"name": "Elearning_hr_employee_dept",
+			"description": "Elearning_hr_employee_dept",
+			"application": "neptunedxp_adaptive_list"
+		},
+		{
+			"id": "4990cbd8-855f-4b2b-860d-83d6435899cc",
+			"name": "elearning_hr_barchart",
+			"description": "elearning_hr_barchart",
+			"application": "neptunedxp_adaptive_tile_chart"
+		}
+	],
+	"api_authentication": [
+		{
+			"id": "2dda4cfd-e4df-4a0b-aeef-a031f15b4454",
+			"name": "test",
+			"description": null
+		}
+	],
+	"api_group": [],
+	"tile": [
+		{
+			"id": "b3658844-f271-4be7-af46-753c9cc93ae7",
+			"description": null,
+			"name": "elearning_hr_employee_chartTile"
+		},
+		{
+			"id": "3c28ada6-fea8-41f9-896d-1d70b8b4663f",
+			"description": null,
+			"name": "elearning_hr_employee_list_tile"
+		}
+	],
+	"tile_layout": [
+		{
+			"id": "036dbeca-0539-4c31-ad46-8b5e2e7fe8a3",
+			"NAME": "elearning_tile_layout"
+		}
+	],
+	"category": [
+		{
+			"id": "e625dfe6-a55e-405e-8c14-dbad649299aa",
+			"description": null,
+			"name": "elearning_hr_employee_list_tileGroup"
+		},
+		{
+			"id": "60e84471-a924-4852-805a-88e18a1cda9f",
+			"description": null,
+			"name": "elearning_hr_employee_chart_tileGrp"
+		}
+	],
+	"tilegroup_layout": [
+		{
+			"id": "4610769d-06b7-44c5-819a-bdc7d8ba21a2",
+			"NAME": "elearning_demo"
+		}
+	],
+	"launchpad": [
+		{
+			"id": "6d6d8fff-0cd5-42d9-b18b-e5311d5a9cf7",
+			"name": "elearning_launchpad",
+			"description": null
+		}
+	],
+	"launchpad_layout": [],
+	"certificates": [],
+	"role": [],
+	"systems": [
+		{
+			"id": "facb0cb7-9e48-4266-9dd6-f2c76d88e45d",
+			"name": "Deploy",
+			"description": null
+		}
+	],
+	"doc": [],
+	"wf_notifications": [
+		{
+			"id": "667bc53d-ca7b-4f64-973f-636b75b269d7",
+			"name": "testemail",
+			"description": "Test email"
+		}
+	],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [
+		{
+			"id": "a68392a6-b4fc-4eeb-95fa-e988777f9d08",
+			"name": "elearning_hr_employee",
+			"description": null
+		},
+		{
+			"id": "5465955e-02a4-4c42-a372-f6ea6838b309",
+			"name": "elearning_hr_chart",
+			"description": null
+		},
+		{
+			"id": "1840aae0-463c-48d7-95b4-df7f1c8ec352",
+			"name": "elearning_hr_employee_department",
+			"description": null
+		}
+	],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": [],
+	"theme_ui5": [],
+	"webapp": []
+}
