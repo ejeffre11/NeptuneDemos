@@ -1,0 +1,33 @@
+{
+	"id": "fdd05ba9-eefd-4517-b4db-a6568e053c6b",
+	"createdAt": "2025-11-14T16:33:36.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [
+		{
+			"id": "internal_moment",
+			"name": "moment",
+			"contextname": "moment",
+			"path": "moment"
+		}
+	],
+	"entitySets": [
+		{
+			"id": "abbd1f91-ddad-ed11-a8e0-000d3ada944e",
+			"name": "elearning_hr_demo_employees",
+			"contextname": "elearning_hr_demo_employees"
+		}
+	],
+	"apis": [],
+	"name": "hr_employees_script",
+	"ver": "25.11.15.1220",
+	"description": null,
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "b5e64c3b-f319-468b-8134-142fb1e9219f",
+	"package": "4c0f0414-8568-4422-940a-3221f0219189"
+}

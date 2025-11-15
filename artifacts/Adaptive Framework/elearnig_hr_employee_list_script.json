@@ -1,6 +1,6 @@
 {
-	"id": "b9b74747-1ed2-4fcc-b16f-3c7f9aa0229b",
-	"createdAt": "2025-11-10T19:03:05.000Z",
+	"id": "fc8423fc-2daa-49bf-8f21-90d6d73bb89f",
+	"createdAt": "2025-11-14T17:39:51.000Z",
 	"createdBy": "admin",
 	"settings": {
 		"properties": {
@@ -28,8 +28,8 @@
 				"typeButtonRun": "Emphasized",
 				"enableRun": true,
 				"enableCreate": true,
-				"enableClose": true,
-				"enableDelete": false,
+				"enableClose": false,
+				"enableDelete": true,
 				"enableExport": false,
 				"enableImport": false,
 				"enableMultiSelect": false,
@@ -42,6 +42,7 @@
 				"textConfirmDelete": "Do you want to delete this entry? ",
 				"titleConfirmDelete": "Delete",
 				"odataValueList": "Field does not have any OData ValueListReference",
+				"title": "Employee List",
 				"_navigationCreate": {
 					"destinationType": "F",
 					"openAs": "P",
@@ -49,7 +50,7 @@
 					"fieldType": "Navigation",
 					"displayResponse": false,
 					"dialogHeader": true,
-					"destinationTargetF": "b9b74747-1ed2-4fcc-b16f-3c7f9aa0229b",
+					"destinationTargetF": "d7e17efc-0c72-4c16-b949-4ae554ba0409",
 					"keyField": []
 				},
 				"_navigationItemPress": {
@@ -59,16 +60,15 @@
 					"fieldType": "Navigation",
 					"displayResponse": false,
 					"dialogHeader": true,
-					"destinationTargetF": "de9637d3-195a-4a8f-91af-73edb9fe04bd",
+					"destinationTargetF": "d7e17efc-0c72-4c16-b949-4ae554ba0409",
 					"keyField": []
-				},
-				"title": "EMPLOYEE LIST"
+				}
 			},
 			"form": {
 				"enableCompact": false,
 				"headerExpanded": true,
 				"headerPreserveState": false,
-				"enableSearchWildcard": false
+				"enableSearchWildcard": true
 			},
 			"table": {
 				"enablePagination": false,
@@ -85,8 +85,8 @@
 				"enableAction3": false,
 				"enableAction4": false,
 				"enableAction5": false,
-				"action1Text": "assets",
-				"action1Type": "Transparent",
+				"action1Text": "Set Active",
+				"action1Type": "Accept",
 				"action2Text": "",
 				"action2Type": "Transparent",
 				"action3Text": "",
@@ -96,15 +96,18 @@
 				"action5Text": "",
 				"action5Type": "Transparent",
 				"_action1Nav": {
-					"destinationType": "A",
-					"openAs": "S",
+					"destinationType": "S",
+					"openAs": "P",
 					"butType": "Accept",
 					"fieldType": "Navigation",
-					"displayResponse": false,
+					"displayResponse": true,
 					"dialogHeader": true,
-					"destinationTargetA": "elearning_assign_assets",
-					"dialogTitle": "assets",
-					"keyField": []
+					"sourceTargetS": "fc8423fc-2daa-49bf-8f21-90d6d73bb89f",
+					"destinationTargetS": "026bdfbb-cd43-41f4-87da-468c0a6bb195",
+					"keyField": [],
+					"scriptSuccessTitle": "Success Occurred",
+					"scriptSuccessMessage": "it works",
+					"scriptErrorTitle": ""
 				}
 			}
 		},
@@ -112,18 +115,6 @@
 			{
 				"name": "city",
 				"label": "City",
-				"type": "text",
-				"usage": "BOTH"
-			},
-			{
-				"name": "createdAt",
-				"label": "Created At",
-				"type": "timestamp",
-				"usage": "BOTH"
-			},
-			{
-				"name": "createdBy",
-				"label": "Created By",
 				"type": "text",
 				"usage": "BOTH"
 			},
@@ -136,12 +127,6 @@
 			{
 				"name": "emailAddress",
 				"label": "Email Address",
-				"type": "text",
-				"usage": "BOTH"
-			},
-			{
-				"name": "employmentTime",
-				"label": "Employment Time",
 				"type": "text",
 				"usage": "BOTH"
 			},
@@ -160,7 +145,7 @@
 			{
 				"name": "hireDate",
 				"label": "Hire Date",
-				"type": "timestamp",
+				"type": "Timestamp Without Time Zone",
 				"usage": "BOTH"
 			},
 			{
@@ -172,12 +157,6 @@
 			{
 				"name": "nationality",
 				"label": "Nationality",
-				"type": "text",
-				"usage": "BOTH"
-			},
-			{
-				"name": "phoneNumber",
-				"label": "Phone Number",
 				"type": "text",
 				"usage": "BOTH"
 			},
@@ -212,30 +191,20 @@
 				"usage": "BOTH"
 			},
 			{
-				"name": "updatedAt",
-				"label": "Updated At",
-				"type": "timestamp",
-				"usage": "BOTH"
-			},
-			{
-				"name": "updatedBy",
-				"label": "Updated By",
+				"name": "employmentTime",
+				"label": "employment Time",
 				"type": "text",
 				"usage": "BOTH"
 			}
 		],
 		"fieldsSel": [
 			{
-				"name": "role",
-				"text": "Role",
+				"name": "firstName",
+				"text": "First Name",
 				"visible": true,
-				"fieldPos": 1
-			},
-			{
-				"name": "department",
-				"text": "Department",
-				"visible": false,
-				"fieldPos": 2
+				"fieldPos": 1,
+				"type": "SingleSelectScript",
+				"scriptSelect": "9629a46d-da9a-4199-9883-e8e0d2ed24f8"
 			}
 		],
 		"fieldsRun": [
@@ -247,7 +216,7 @@
 				"popinDisplay": "Inline",
 				"enableSort": true,
 				"visible": true,
-				"fieldPos": 3
+				"fieldPos": 2
 			},
 			{
 				"name": "lastName",
@@ -257,11 +226,21 @@
 				"popinDisplay": "Inline",
 				"enableSort": true,
 				"visible": true,
+				"fieldPos": 3
+			},
+			{
+				"name": "nationality",
+				"text": "Nationality",
+				"enableFilter": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableSort": true,
+				"visible": true,
 				"fieldPos": 4
 			},
 			{
-				"name": "department",
-				"text": "Department",
+				"name": "emailAddress",
+				"text": "Email Address",
 				"enableFilter": true,
 				"buttonType": "Transparent",
 				"popinDisplay": "Inline",
@@ -270,28 +249,18 @@
 				"fieldPos": 5
 			},
 			{
-				"name": "role",
-				"text": "Role",
+				"name": "employmentTime",
+				"text": "employment Time",
 				"enableFilter": true,
 				"buttonType": "Transparent",
 				"popinDisplay": "Inline",
 				"enableSort": true,
 				"visible": true,
 				"fieldPos": 6
-			},
-			{
-				"name": "hireDate",
-				"text": "Hire Date",
-				"enableFilter": false,
-				"buttonType": "Transparent",
-				"popinDisplay": "Inline",
-				"enableSort": true,
-				"visible": true,
-				"fieldPos": 7
 			}
 		],
 		"defaultVariant": {
-			"id": "8a460fd0-7eea-4bf9-8077-ca8b29673727",
+			"id": "6262c9d8-9290-4525-bae2-96873b7525c9",
 			"colOrder": "key_a_to_z",
 			"rowOrder": "key_a_to_z",
 			"row": [],
@@ -301,36 +270,6 @@
 			"exclusions": {}
 		},
 		"translation": {
-			"EN": {
-				"report": {
-					"title": "",
-					"subTitle": "",
-					"textButtonClose": "",
-					"textButtonCreate": "",
-					"textButtonExport": "",
-					"textButtonImport": "",
-					"textButtonMultiSelect": "",
-					"textButtonRun": "",
-					"searchLabel": "",
-					"searchPlaceholder": "",
-					"requiredFieldsToast": "",
-					"textConfirmDelete": "",
-					"titleConfirmDelete": "",
-					"odataValueList": ""
-				},
-				"form": {},
-				"table": {
-					"headerText": "",
-					"footerText": "",
-					"noDataText": "",
-					"action1Tooltip": "",
-					"action2Tooltip": "",
-					"action3Tooltip": "",
-					"action4Tooltip": "",
-					"action5Tooltip": ""
-				},
-				"fieldCatalog": {}
-			},
 			"NO": {
 				"report": {
 					"title": "",
@@ -361,18 +300,17 @@
 				},
 				"fieldCatalog": {}
 			}
-		},
-		"table": "elearning_hr_demo_employees"
+		}
 	},
-	"name": "elearning_hr_employee_list",
-	"description": "elearning_hr_employee_list",
+	"name": "elearnig_hr_employee_list_script",
+	"description": "elearnig_hr_employee_list_script",
 	"group": "",
 	"type": "C",
-	"connectorid": "a68392a6-b4fc-4eeb-95fa-e988777f9d08",
+	"connectorid": "c4a3254c-caf7-4ca7-bb7b-2e351d1b8cb2",
 	"scriptSel": null,
 	"scriptRun": null,
 	"tableid": null,
-	"ver": "25.11.15.1258",
+	"ver": "25.11.15.1224",
 	"disabled": false,
 	"appType": "A",
 	"application": "neptunedxp_adaptive_list",

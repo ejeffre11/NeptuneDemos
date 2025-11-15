@@ -1,0 +1,5 @@
+// Load Adaptive App into a Parent Object
+AppCache.LoadAdaptive("b9b74747-1ed2-4fcc-b16f-3c7f9aa0229b", {
+  parentObject: oPage,
+});
+

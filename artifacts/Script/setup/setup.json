@@ -1,0 +1,20 @@
+{
+	"id": "6e3df2fc-3686-4a77-98b4-7f9a5ed131d6",
+	"createdAt": "2025-11-14T16:32:31.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "setup",
+	"ver": "25.11.15.1216",
+	"description": null,
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "b5e64c3b-f319-468b-8134-142fb1e9219f",
+	"package": "4c0f0414-8568-4422-940a-3221f0219189"
+}

@@ -28,6 +28,12 @@
 			"description": ""
 		},
 		{
+			"id": "332efe70-0b1a-4fca-9cc5-05bc29bd362a",
+			"application": "elearning_load_adaptive1",
+			"title": "",
+			"description": ""
+		},
+		{
 			"id": "2ce943d1-a99a-488b-b06a-ff501bb91a5d",
 			"application": "barcode_scanning",
 			"title": "",
@@ -71,17 +77,42 @@
 	],
 	"jsclass": [
 		{
+			"id": "fdd05ba9-eefd-4517-b4db-a6568e053c6b",
+			"name": "hr_employees_script",
+			"description": null
+		},
+		{
+			"id": "9629a46d-da9a-4199-9883-e8e0d2ed24f8",
+			"name": "selectScript",
+			"description": "selectScript"
+		},
+		{
 			"id": "709f39b9-4c9f-40d2-959b-574d3f2a96a7",
 			"name": "test",
+			"description": null
+		},
+		{
+			"id": "6e3df2fc-3686-4a77-98b4-7f9a5ed131d6",
+			"name": "setup",
 			"description": null
 		},
 		{
 			"id": "2ca5ff50-ba61-4252-81dc-8bb64b74c90c",
 			"name": "testscript",
 			"description": null
+		},
+		{
+			"id": "026bdfbb-cd43-41f4-87da-468c0a6bb195",
+			"name": "eventScript",
+			"description": "event confirmation"
 		}
 	],
 	"jsscript_group": [
+		{
+			"id": "b5e64c3b-f319-468b-8134-142fb1e9219f",
+			"name": "hr_adaptiver_script",
+			"description": ""
+		},
 		{
 			"id": "05f836ff-033e-47c6-8e9b-4b430031fa63",
 			"name": "elearning_server_script",
@@ -104,6 +135,12 @@
 	],
 	"reports": [
 		{
+			"id": "fc8423fc-2daa-49bf-8f21-90d6d73bb89f",
+			"name": "elearnig_hr_employee_list_script",
+			"description": "elearnig_hr_employee_list_script",
+			"application": "neptunedxp_adaptive_list"
+		},
+		{
 			"id": "fbbad11e-6fa7-4392-b81f-e301c997cf4e",
 			"name": "elearning_HR_splitter",
 			"description": "elearning_HR_splitter",
@@ -113,6 +150,12 @@
 			"id": "de9637d3-195a-4a8f-91af-73edb9fe04bd",
 			"name": "elearning_hr_employee_edit",
 			"description": "elearning_hr_employee_edit",
+			"application": "neptunedxp_adaptive_edit"
+		},
+		{
+			"id": "d7e17efc-0c72-4c16-b949-4ae554ba0409",
+			"name": "elearning_hr_employee_edit_script",
+			"description": "elearning_hr_employee_edit_script",
 			"application": "neptunedxp_adaptive_edit"
 		},
 		{
@@ -153,6 +196,11 @@
 			"id": "b3658844-f271-4be7-af46-753c9cc93ae7",
 			"description": null,
 			"name": "elearning_hr_employee_chartTile"
+		},
+		{
+			"id": "407c647b-ec3b-427e-b1cc-9fb90942962d",
+			"description": null,
+			"name": "elearning_hr_load_adaptive"
 		},
 		{
 			"id": "3c28ada6-fea8-41f9-896d-1d70b8b4663f",
@@ -213,6 +261,11 @@
 	"script_scheduler": [],
 	"wf_definition": [],
 	"connector": [
+		{
+			"id": "c4a3254c-caf7-4ca7-bb7b-2e351d1b8cb2",
+			"name": "elearning_hr_demo_script_connector",
+			"description": null
+		},
 		{
 			"id": "a68392a6-b4fc-4eeb-95fa-e988777f9d08",
 			"name": "elearning_hr_employee",

@@ -4,7 +4,8 @@
 	"createdBy": "admin",
 	"translation": [],
 	"tilesOrder": [
-		"3c28ada6-fea8-41f9-896d-1d70b8b4663f"
+		"3c28ada6-fea8-41f9-896d-1d70b8b4663f",
+		"407c647b-ec3b-427e-b1cc-9fb90942962d"
 	],
 	"tilegroupsOrder": [
 		"60e84471-a924-4852-805a-88e18a1cda9f"
@@ -31,7 +32,7 @@
 	"enableShadeCalc": false,
 	"numTiles": null,
 	"enableMessage": false,
-	"ver": "25.11.12.0900",
+	"ver": "25.11.15.1252",
 	"headColor": null,
 	"headTxtClr": null,
 	"subheadTxtClr": null,
@@ -99,6 +100,12 @@
 	"lightTileLayouts": [],
 	"darkTileLayouts": [],
 	"tiles": [
+		{
+			"id": "407c647b-ec3b-427e-b1cc-9fb90942962d",
+			"name": "elearning_hr_load_adaptive",
+			"title": "elearning_hr_load_adaptive",
+			"ver": "25.11.15.1251"
+		},
 		{
 			"id": "3c28ada6-fea8-41f9-896d-1d70b8b4663f",
 			"name": "elearning_hr_employee_list_tile",

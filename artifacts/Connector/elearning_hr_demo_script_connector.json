@@ -1,0 +1,18 @@
+{
+	"id": "c4a3254c-caf7-4ca7-bb7b-2e351d1b8cb2",
+	"createdAt": "2025-11-14T17:36:56.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"scriptSel": "6e3df2fc-3686-4a77-98b4-7f9a5ed131d6",
+		"scriptRun": "fdd05ba9-eefd-4517-b4db-a6568e053c6b",
+		"hasDocumentation": false
+	},
+	"documentation": {},
+	"name": "elearning_hr_demo_script_connector",
+	"description": null,
+	"group": null,
+	"type": "S",
+	"ver": "25.11.14.1236",
+	"disabled": false,
+	"package": "4c0f0414-8568-4422-940a-3221f0219189"
+}
