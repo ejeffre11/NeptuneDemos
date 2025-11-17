@@ -1,0 +1,58 @@
+{
+	"id": "1a8f79f4-fdc2-413f-9225-86a94ce14b45",
+	"createdAt": "2025-11-15T19:03:15.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "5409b698-ec30-404e-b146-d8d8f48a70a6",
+			"fieldName": "title",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "title",
+			"isNullable": true
+		},
+		{
+			"id": "cfe8c3e0-c5e8-4f3d-f60c-56764b46b4e6",
+			"fieldName": "desc",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "desc",
+			"isNullable": true
+		},
+		{
+			"id": "ea89124b-9c38-462f-9c7f-5a29376d1b24",
+			"fieldName": "formid",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "form id",
+			"isNullable": true
+		},
+		{
+			"id": "c20fa717-7647-4788-d31d-5a511e2a0aef",
+			"fieldName": "formdata",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "form data"
+		},
+		{
+			"id": "101f9418-7e6a-494c-bcb0-7f9f99929a4b",
+			"fieldName": "formstatus",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "form status"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "elearning_forms_data",
+	"description": null,
+	"ver": "25.11.15.1404",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "4c0f0414-8568-4422-940a-3221f0219189",
+	"generationStrategy": "uuid",
+	"rolesRead": [],
+	"rolesWrite": []
+}

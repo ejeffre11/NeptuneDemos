@@ -1,0 +1,29 @@
+{
+	"id": "237d267c-211b-432e-a721-b9d6ea7eb5ef",
+	"createdAt": "2025-11-17T18:49:22.000Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [
+		{
+			"role": "DEV",
+			"endpoint": "https://petstore.swagger.io.",
+			"id": "2564f5c4-0d19-4420-eb48-9ba730b6de5e"
+		}
+	],
+	"url": "https://petstore.swagger.io",
+	"name": "pets",
+	"ver": "25.11.17.1436",
+	"description": null,
+	"role": null,
+	"username": null,
+	"password": "",
+	"type": "Other",
+	"sapClient": null,
+	"useClientDeploy": false,
+	"token": "",
+	"monitoringName": null,
+	"monitoringEnabled": false,
+	"tlsAllowUntrusted": false,
+	"preRequestHookId": null,
+	"package": "4c0f0414-8568-4422-940a-3221f0219189"
+}

@@ -1,0 +1,1125 @@
+{
+	"id": "22f015ab-4360-4fef-b909-76407976cbb1",
+	"createdAt": "2025-11-17T21:28:36.000Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "4f4af9e3-efeb-4a15-ce40-f26013b2a009",
+			"path": "/pet/(petId)/uploadImage",
+			"description": "",
+			"summary": "uploads an image",
+			"method": "POST",
+			"example": "",
+			"responses": [
+				{
+					"status": "200",
+					"description": "successful operation",
+					"headers": [],
+					"content": [
+						{
+							"name": "ApiResponse",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "petId",
+					"description": "ID of pet to update",
+					"inPath": true,
+					"required": true,
+					"type": "integer"
+				},
+				{
+					"name": "additionalMetadata",
+					"description": "Additional data to pass to server",
+					"inPath": false,
+					"required": false,
+					"type": "string"
+				},
+				{
+					"name": "file",
+					"description": "file to upload",
+					"inPath": false,
+					"required": false,
+					"type": "file"
+				}
+			],
+			"content": [],
+			"tags": "pet"
+		},
+		{
+			"id": "e8aa80c8-a6d8-4096-ce7d-2630a2f59ad8",
+			"path": "/pet",
+			"description": "",
+			"summary": "Add a new pet to the store",
+			"method": "POST",
+			"example": "",
+			"responses": [
+				{
+					"status": "405",
+					"description": "Invalid input",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectType": "object",
+					"required": true,
+					"name": "Pet"
+				}
+			],
+			"tags": "pet"
+		},
+		{
+			"id": "8d909947-0b7a-4a6c-c606-aa72a22a1f2e",
+			"path": "/pet",
+			"description": "",
+			"summary": "Update an existing pet",
+			"method": "PUT",
+			"example": "",
+			"responses": [
+				{
+					"status": "400",
+					"description": "Invalid ID supplied",
+					"headers": [],
+					"content": []
+				},
+				{
+					"status": "404",
+					"description": "Pet not found",
+					"headers": [],
+					"content": []
+				},
+				{
+					"status": "405",
+					"description": "Validation exception",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectType": "object",
+					"required": true,
+					"name": "Pet"
+				}
+			],
+			"tags": "pet"
+		},
+		{
+			"id": "824724df-9be4-4c43-cd98-f74eeb499705",
+			"path": "/pet/findByStatus",
+			"description": "Multiple status values can be provided with comma separated strings",
+			"summary": "Finds Pets by status",
+			"method": "GET",
+			"example": "",
+			"responses": [
+				{
+					"status": "200",
+					"description": "successful operation",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "Pet"
+						}
+					]
+				},
+				{
+					"status": "400",
+					"description": "Invalid status value",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "status",
+					"description": "Status values that need to be considered for filter",
+					"inPath": false,
+					"alternatives": "available,pending,sold",
+					"default": "available",
+					"required": true,
+					"type": "array"
+				}
+			],
+			"content": [],
+			"tags": "pet"
+		},
+		{
+			"id": "82935980-1ad2-475e-ce66-b729bf02364e",
+			"path": "/pet/findByTags",
+			"description": "Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.",
+			"summary": "Finds Pets by tags",
+			"method": "GET",
+			"example": "",
+			"responses": [
+				{
+					"status": "200",
+					"description": "successful operation",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "Pet"
+						}
+					]
+				},
+				{
+					"status": "400",
+					"description": "Invalid tag value",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "tags",
+					"description": "Tags to filter by",
+					"inPath": false,
+					"required": true,
+					"type": "array"
+				}
+			],
+			"content": [],
+			"tags": "pet"
+		},
+		{
+			"id": "a2b3081e-1a70-40ed-f9db-d53c377b8011",
+			"path": "/pet/(petId)",
+			"description": "Returns a single pet",
+			"summary": "Find pet by ID",
+			"method": "GET",
+			"example": "",
+			"responses": [
+				{
+					"status": "200",
+					"description": "successful operation",
+					"headers": [],
+					"content": [
+						{
+							"name": "Pet",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "400",
+					"description": "Invalid ID supplied",
+					"headers": [],
+					"content": []
+				},
+				{
+					"status": "404",
+					"description": "Pet not found",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "petId",
+					"description": "ID of pet to return",
+					"inPath": true,
+					"required": true,
+					"type": "integer"
+				}
+			],
+			"content": [],
+			"tags": "pet"
+		},
+		{
+			"id": "572f5625-a83c-4c89-ea39-3ec421ad9166",
+			"path": "/pet/(petId)",
+			"description": "",
+			"summary": "Updates a pet in the store with form data",
+			"method": "POST",
+			"example": "",
+			"responses": [
+				{
+					"status": "405",
+					"description": "Invalid input",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "petId",
+					"description": "ID of pet that needs to be updated",
+					"inPath": true,
+					"required": true,
+					"type": "integer"
+				},
+				{
+					"name": "name",
+					"description": "Updated name of the pet",
+					"inPath": false,
+					"required": false,
+					"type": "string"
+				},
+				{
+					"name": "status",
+					"description": "Updated status of the pet",
+					"inPath": false,
+					"required": false,
+					"type": "string"
+				}
+			],
+			"content": [],
+			"tags": "pet",
+			"enableCredentials": true
+		},
+		{
+			"id": "2bf13884-b997-4b03-94e7-84cd588daf40",
+			"path": "/pet/(petId)",
+			"description": "",
+			"summary": "Deletes a pet",
+			"method": "DELETE",
+			"example": "",
+			"responses": [
+				{
+					"status": "400",
+					"description": "Invalid ID supplied",
+					"headers": [],
+					"content": []
+				},
+				{
+					"status": "404",
+					"description": "Pet not found",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [
+				{
+					"name": "api_key",
+					"required": false,
+					"type": "string"
+				}
+			],
+			"parameters": [
+				{
+					"name": "petId",
+					"description": "Pet id to delete",
+					"inPath": true,
+					"required": true,
+					"type": "integer"
+				}
+			],
+			"content": [],
+			"tags": "pet"
+		},
+		{
+			"id": "d2d1904f-eae4-4715-8414-671b7a0f4c3b",
+			"path": "/store/inventory",
+			"description": "Returns a map of status codes to quantities",
+			"summary": "Returns pet inventories by status",
+			"method": "GET",
+			"example": "",
+			"responses": [
+				{
+					"status": "200",
+					"description": "successful operation",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "inventory"
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"tags": "store"
+		},
+		{
+			"id": "4d8df2d0-96d5-4b40-c582-307d3c8b999e",
+			"path": "/store/order",
+			"description": "",
+			"summary": "Place an order for a pet",
+			"method": "POST",
+			"example": "",
+			"responses": [
+				{
+					"status": "200",
+					"description": "successful operation",
+					"headers": [],
+					"content": [
+						{
+							"name": "Order",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "400",
+					"description": "Invalid Order",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectType": "object",
+					"required": true,
+					"name": "Order"
+				}
+			],
+			"tags": "store"
+		},
+		{
+			"id": "d72bde11-28f7-41ec-cfa4-5da037c4c099",
+			"path": "/store/order/(orderId)",
+			"description": "For valid response try integer IDs with value >= 1 and <= 10. Other values will generated exceptions",
+			"summary": "Find purchase order by ID",
+			"method": "GET",
+			"example": "",
+			"responses": [
+				{
+					"status": "200",
+					"description": "successful operation",
+					"headers": [],
+					"content": [
+						{
+							"name": "Order",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "400",
+					"description": "Invalid ID supplied",
+					"headers": [],
+					"content": []
+				},
+				{
+					"status": "404",
+					"description": "Order not found",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "orderId",
+					"description": "ID of pet that needs to be fetched",
+					"inPath": true,
+					"required": true,
+					"type": "integer",
+					"minLength": 1,
+					"maxLength": 10
+				}
+			],
+			"content": [],
+			"tags": "store"
+		},
+		{
+			"id": "4cdc0438-5afb-4b35-db01-73d791df1d65",
+			"path": "/store/order/(orderId)",
+			"description": "For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors",
+			"summary": "Delete purchase order by ID",
+			"method": "DELETE",
+			"example": "",
+			"responses": [
+				{
+					"status": "400",
+					"description": "Invalid ID supplied",
+					"headers": [],
+					"content": []
+				},
+				{
+					"status": "404",
+					"description": "Order not found",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "orderId",
+					"description": "ID of the order that needs to be deleted",
+					"inPath": true,
+					"required": true,
+					"type": "integer",
+					"minLength": 1
+				}
+			],
+			"content": [],
+			"tags": "store"
+		},
+		{
+			"id": "67acb6ad-f65e-4f2d-f7d6-2ea3a9670836",
+			"path": "/user/createWithList",
+			"description": "",
+			"summary": "Creates list of users with given input array",
+			"method": "POST",
+			"example": "",
+			"responses": [
+				{
+					"status": "default",
+					"description": "successful operation",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectType": "object",
+					"required": true,
+					"name": "User"
+				}
+			],
+			"tags": "user"
+		},
+		{
+			"id": "ccd2c8a4-8405-42bc-cc73-6ed760ea43a6",
+			"path": "/user/(username)",
+			"description": "",
+			"summary": "Get user by user name",
+			"method": "GET",
+			"example": "",
+			"responses": [
+				{
+					"status": "200",
+					"description": "successful operation",
+					"headers": [],
+					"content": [
+						{
+							"name": "User",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "400",
+					"description": "Invalid username supplied",
+					"headers": [],
+					"content": []
+				},
+				{
+					"status": "404",
+					"description": "User not found",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "username",
+					"description": "The name that needs to be fetched. Use user1 for testing. ",
+					"inPath": true,
+					"required": true,
+					"type": "string"
+				}
+			],
+			"content": [],
+			"tags": "user"
+		},
+		{
+			"id": "41f36298-954a-49ea-ae6b-13aca89e40c8",
+			"path": "/user/(username)",
+			"description": "This can only be done by the logged in user.",
+			"summary": "Updated user",
+			"method": "PUT",
+			"example": "",
+			"responses": [
+				{
+					"status": "400",
+					"description": "Invalid user supplied",
+					"headers": [],
+					"content": []
+				},
+				{
+					"status": "404",
+					"description": "User not found",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "username",
+					"description": "name that need to be updated",
+					"inPath": true,
+					"required": true,
+					"type": "string"
+				}
+			],
+			"content": [
+				{
+					"objectType": "object",
+					"required": true,
+					"name": "User"
+				}
+			],
+			"tags": "user"
+		},
+		{
+			"id": "662ecaec-b1cd-4561-aa7a-d5d44d6c9a52",
+			"path": "/user/(username)",
+			"description": "This can only be done by the logged in user.",
+			"summary": "Delete user",
+			"method": "DELETE",
+			"example": "",
+			"responses": [
+				{
+					"status": "400",
+					"description": "Invalid username supplied",
+					"headers": [],
+					"content": []
+				},
+				{
+					"status": "404",
+					"description": "User not found",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "username",
+					"description": "The name that needs to be deleted",
+					"inPath": true,
+					"required": true,
+					"type": "string"
+				}
+			],
+			"content": [],
+			"tags": "user"
+		},
+		{
+			"id": "1de67ccd-7458-4ed8-9c27-e9c56f567c79",
+			"path": "/user/login",
+			"description": "",
+			"summary": "Logs user into the system",
+			"method": "GET",
+			"example": "",
+			"responses": [
+				{
+					"status": "200",
+					"description": "successful operation",
+					"headers": [
+						{
+							"name": "X-Expires-After",
+							"description": "date in UTC when token expires",
+							"example": ""
+						},
+						{
+							"name": "X-Rate-Limit",
+							"description": "calls per hour allowed by the user",
+							"example": ""
+						}
+					],
+					"content": [
+						{
+							"objectType": "string",
+							"name": "type"
+						}
+					]
+				},
+				{
+					"status": "400",
+					"description": "Invalid username/password supplied",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "username",
+					"description": "The user name for login",
+					"inPath": false,
+					"required": true,
+					"type": "string"
+				},
+				{
+					"name": "password",
+					"description": "The password for login in clear text",
+					"inPath": false,
+					"required": true,
+					"type": "string"
+				}
+			],
+			"content": [],
+			"tags": "user"
+		},
+		{
+			"id": "d86167ac-6bad-4552-f7bd-6715f8c6753d",
+			"path": "/user/logout",
+			"description": "",
+			"summary": "Logs out current logged in user session",
+			"method": "GET",
+			"example": "",
+			"responses": [
+				{
+					"status": "default",
+					"description": "successful operation",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"tags": "user"
+		},
+		{
+			"id": "c4e9716c-02cf-4d6b-de30-9e896f72a3e8",
+			"path": "/user/createWithArray",
+			"description": "",
+			"summary": "Creates list of users with given input array",
+			"method": "POST",
+			"example": "",
+			"responses": [
+				{
+					"status": "default",
+					"description": "successful operation",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectType": "object",
+					"required": true,
+					"name": "User"
+				}
+			],
+			"tags": "user"
+		},
+		{
+			"id": "1ccb7f6c-25e4-4a3c-b8f3-93adf6d58b99",
+			"path": "/user",
+			"description": "This can only be done by the logged in user.",
+			"summary": "Create user",
+			"method": "POST",
+			"example": "",
+			"responses": [
+				{
+					"status": "default",
+					"description": "successful operation",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectType": "object",
+					"required": true,
+					"name": "User"
+				}
+			],
+			"tags": "user"
+		}
+	],
+	"definitions": [
+		{
+			"id": "9cc25901-2068-4ae3-fce7-f611a2433f82",
+			"name": "ApiResponse",
+			"properties": [
+				{
+					"id": "9a8627fd-4e66-4545-bafd-c3f727483c71",
+					"name": "code",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "integer",
+					"maxLength": ""
+				},
+				{
+					"id": "cf7e90f9-c87c-449a-989b-3fa25272e4e9",
+					"name": "type",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "string",
+					"maxLength": ""
+				},
+				{
+					"id": "69e68e08-aded-4c4f-d8f1-45aa3387cf21",
+					"name": "message",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "string",
+					"maxLength": ""
+				}
+			]
+		},
+		{
+			"id": "b5b5114e-7bd0-4951-ece2-9754b553c11f",
+			"name": "Category",
+			"properties": [
+				{
+					"id": "a72e9b6e-030a-4fd9-99d0-5baed71538bf",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "integer",
+					"maxLength": ""
+				},
+				{
+					"id": "7960ab95-b1e1-40fb-98d1-e330bc39ac15",
+					"name": "name",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "string",
+					"maxLength": ""
+				}
+			]
+		},
+		{
+			"id": "1b1125c3-8a16-48ba-a232-448f3b879ed0",
+			"name": "Pet",
+			"properties": [
+				{
+					"id": "51585a1a-3eea-459c-b080-3ce80f142dfd",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "integer",
+					"maxLength": ""
+				},
+				{
+					"id": "e6c23927-8ca4-4a24-dbfa-55c11749db2e",
+					"name": "category",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "object",
+					"maxLength": ""
+				},
+				{
+					"id": "a48d4fb3-0113-4baa-b868-591766491ec6",
+					"parent": "e6c23927-8ca4-4a24-dbfa-55c11749db2e",
+					"name": "id",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"default": "",
+					"objectType": "integer",
+					"maxLength": ""
+				},
+				{
+					"id": "f262243b-0551-48dd-e83b-dfda3512b3ca",
+					"parent": "e6c23927-8ca4-4a24-dbfa-55c11749db2e",
+					"name": "name",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"default": "",
+					"objectType": "string",
+					"maxLength": ""
+				},
+				{
+					"id": "721d8921-229c-4582-90f4-a84e3d872aa9",
+					"required": true,
+					"name": "name",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "doggie",
+					"objectType": "string",
+					"maxLength": ""
+				},
+				{
+					"id": "3ed90c29-e78f-4c5b-a77d-7de1a37fbab6",
+					"required": true,
+					"name": "photoUrls",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "array",
+					"maxLength": ""
+				},
+				{
+					"id": "6c79ba5d-7a6f-4f2d-fa3e-4f9a76a43bf1",
+					"name": "tags",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "array",
+					"maxLength": ""
+				},
+				{
+					"id": "705bf1d8-c119-4518-dce1-edeff91ac424",
+					"parent": "6c79ba5d-7a6f-4f2d-fa3e-4f9a76a43bf1",
+					"name": "id",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"default": "",
+					"objectType": "integer",
+					"maxLength": ""
+				},
+				{
+					"id": "7d5af5d9-1b09-4990-caa0-17e3d6880cd2",
+					"parent": "6c79ba5d-7a6f-4f2d-fa3e-4f9a76a43bf1",
+					"name": "name",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"default": "",
+					"objectType": "string",
+					"maxLength": ""
+				},
+				{
+					"id": "d807547f-1d0d-4e52-f62f-57427160f391",
+					"name": "status",
+					"parent": "",
+					"description": "pet status in the store",
+					"pattern": "",
+					"example": "",
+					"objectType": "string",
+					"maxLength": ""
+				}
+			]
+		},
+		{
+			"id": "a678bd64-c1a0-4496-8778-82b51ece434e",
+			"name": "Tag",
+			"properties": [
+				{
+					"id": "39f66f0f-b6e4-4a8d-bf37-443e75a734a3",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "integer",
+					"maxLength": ""
+				},
+				{
+					"id": "9e1f0b52-8d13-47ae-832e-399e484d0f14",
+					"name": "name",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "string",
+					"maxLength": ""
+				}
+			]
+		},
+		{
+			"id": "44ca0b64-2723-46ce-da22-3b2562c05427",
+			"name": "Order",
+			"properties": [
+				{
+					"id": "3b2f9e6d-8470-44f8-9c29-0a879be54965",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "integer",
+					"maxLength": ""
+				},
+				{
+					"id": "1afed43f-bc96-41e6-9876-172e5e00b24c",
+					"name": "petId",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "integer",
+					"maxLength": ""
+				},
+				{
+					"id": "8f6ea793-9bfc-4e58-8773-31c27331a53c",
+					"name": "quantity",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "integer",
+					"maxLength": ""
+				},
+				{
+					"id": "625e85de-20c0-440d-e0cc-44c231c639f1",
+					"name": "shipDate",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "string",
+					"maxLength": ""
+				},
+				{
+					"id": "bf4a225b-e512-4019-9969-4445dc680585",
+					"name": "status",
+					"parent": "",
+					"description": "Order Status",
+					"pattern": "",
+					"example": "",
+					"objectType": "string",
+					"maxLength": ""
+				},
+				{
+					"id": "097e7422-7cba-4c4d-b8e0-95c5c3c31828",
+					"name": "complete",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "boolean",
+					"maxLength": ""
+				}
+			]
+		},
+		{
+			"id": "2fe3afa7-df5c-43a1-9391-3875db4be4d3",
+			"name": "User",
+			"properties": [
+				{
+					"id": "ae081f0d-e5fb-4a02-bba9-fd0f86f630c5",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "integer",
+					"maxLength": ""
+				},
+				{
+					"id": "4957eee7-1f75-4b81-bbcf-0e0adde3b588",
+					"name": "username",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "string",
+					"maxLength": ""
+				},
+				{
+					"id": "a520618d-78ff-4902-e0c4-c7b53390bbff",
+					"name": "firstName",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "string",
+					"maxLength": ""
+				},
+				{
+					"id": "cb83d269-d939-4905-d10d-f04e4680cc01",
+					"name": "lastName",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "string",
+					"maxLength": ""
+				},
+				{
+					"id": "19ca3b29-3277-4dfa-fdcd-80e70c1479c7",
+					"name": "email",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "string",
+					"maxLength": ""
+				},
+				{
+					"id": "d5a196a1-6230-45fd-8737-9de57d9ed415",
+					"name": "password",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "string",
+					"maxLength": ""
+				},
+				{
+					"id": "ff6799ca-88d3-47b0-f568-7c4fb4166222",
+					"name": "phone",
+					"parent": "",
+					"description": "",
+					"pattern": "",
+					"example": "",
+					"objectType": "string",
+					"maxLength": ""
+				},
+				{
+					"id": "dbc124b3-bbb9-43e4-ed6b-39cd87e1936d",
+					"name": "userStatus",
+					"parent": "",
+					"description": "User Status",
+					"pattern": "",
+					"example": "",
+					"objectType": "integer",
+					"maxLength": ""
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "Pets",
+	"endpoint": "https://petstore.swagger.io/v2",
+	"ver": "25.11.17.1733",
+	"version": "1.0.7",
+	"description": null,
+	"mediaType": "application/json",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "This is a sample server Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you can use the api key `special-key` to test the authorization filters.",
+	"enableProxy": true,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "4c0f0414-8568-4422-940a-3221f0219189",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

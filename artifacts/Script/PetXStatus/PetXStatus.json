@@ -1,0 +1,28 @@
+{
+	"id": "80b0d421-bc05-4b33-8be1-0d632cc4c0ca",
+	"createdAt": "2025-11-17T22:34:03.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [
+		{
+			"id": "824724df-9be4-4c43-cd98-f74eeb499705",
+			"parent": "22f015ab-4360-4fef-b909-76407976cbb1",
+			"name": "/pet/findByStatus",
+			"contextname": "petfindByStatus",
+			"method": "GET"
+		}
+	],
+	"name": "PetXStatus",
+	"ver": "25.11.17.1758",
+	"description": null,
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "d7c51138-1d83-4c09-ac02-c0128b492638",
+	"package": "4c0f0414-8568-4422-940a-3221f0219189"
+}

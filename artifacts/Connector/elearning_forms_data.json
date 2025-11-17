@@ -1,0 +1,17 @@
+{
+	"id": "55d0d38f-bd53-41de-8afa-7fb63bbabb94",
+	"createdAt": "2025-11-15T19:05:35.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"hasDocumentation": false,
+		"tableid": "1a8f79f4-fdc2-413f-9225-86a94ce14b45"
+	},
+	"documentation": {},
+	"name": "elearning_forms_data",
+	"description": null,
+	"group": null,
+	"type": "T",
+	"ver": "25.11.15.1405",
+	"disabled": false,
+	"package": "4c0f0414-8568-4422-940a-3221f0219189"
+}
